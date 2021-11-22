@@ -12,12 +12,12 @@ names(wm_data) <- c("Year", "log.q", "log.h", "log.p", "log.pc",
                     "log.pv", "log.w", "log.n", "log.yn", "log.pf")
 wm_data$p <- exp(wm_data$log.p)  # Price
 wm_data$h <- exp(wm_data$log.h)  # Crop
-wm_data$q <- exp(wm_data$log.q)  # harvested
+wm_data$q <- exp(wm_data$log.q)  # Harvested
 
 
 #Calculate elasticity
-#wm_data$e_h <- NA # 수확량의 탄력성
-#wm_data$e_q <- NA # 재배량의 탄력성
+#wm_data$e_h <- NA # Price elasticity of crop
+#wm_data$e_q <- NA # Price elasticity of harvest
 #for(i in c(2:length(wm_data$Year))) {
 #  delta_q <- wm_data$q[i] - wm_data$q[i-1]
 #  q <- (wm_data$q[i] + wm_data$q[i-1])/2
